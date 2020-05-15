@@ -14,7 +14,7 @@ secret_key_base =
 config :tsungdemo, TsungDemoWeb.Endpoint,
   http: [
     port: String.to_integer(System.get_env("PORT") || "4000"),
-    transport_options: [socket_opts: [:inet6]]
+    transport_options: [max_connections: 1_048_576, num_acceptors: 1000, socket_opts: [:inet6]]
   ],
   secret_key_base: secret_key_base
 
