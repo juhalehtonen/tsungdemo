@@ -11,7 +11,7 @@ defmodule TsungDemoWeb.Endpoint do
   ]
 
   socket "/socket", TsungDemoWeb.UserSocket,
-    websocket: [check_origin: false, timeout: 240_000],
+    websocket: [check_origin: false, timeout: 240_000_000],
     longpoll: false
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
