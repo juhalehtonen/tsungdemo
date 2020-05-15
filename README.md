@@ -7,7 +7,6 @@ Demo to test Tsung with.
 ```
 # Set env vars
 mix phx.gen.secret
-export SECRET_KEY_BASE=REALLY_LONG_SECRET
 
 # Initial setup
 mix deps.get --only prod
