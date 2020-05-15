@@ -30,6 +30,8 @@ tar -zxvf tsungdemo.tar.gz
 
 `SECRET_KEY_BASE=YOURSECRETKEY _build/prod/rel/tsungdemo/bin/tsungdemo start --erl "+P 5000000"`
 
+Or if the --erl flag doesn't work with releases, add +P 5000000 to the vm.args file.
+
 ## Phoenix
 
 To start your Phoenix server:
