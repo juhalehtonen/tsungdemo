@@ -26,6 +26,10 @@ And extract it on the server:
 tar -zxvf tsungdemo.tar.gz
 ```
 
+## Running
+
+`SECRET_KEY_BASE=YOURSECRETKEY _build/prod/rel/tsungdemo/bin/tsungdemo start --erl "+P 5000000"`
+
 ## Phoenix
 
 To start your Phoenix server:
