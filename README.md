@@ -13,7 +13,7 @@ mix deps.get --only prod
 MIX_ENV=prod mix compile
 
 # Build release
-SECRET_KEY_BASE=REALLY_LONG_SECRET MIX_ENV=prod mix release
+MIX_ENV=prod mix release
 ```
 
 Now you can .tar.gz the `_build/prod/rel/tsungdemo` directory and ship it:
