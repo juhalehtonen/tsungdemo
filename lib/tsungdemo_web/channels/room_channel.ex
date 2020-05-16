@@ -10,7 +10,7 @@ defmodule TsungDemoWeb.RoomChannel do
   end
 
   def handle_in("new:msg", %{"body" => body, "user" => user}, socket) do
-    broadcast!(socket, "new_msg", %{body: body, user: user})
+    broadcast!(socket, "new:msg", %{body: body, user: user})
     {:noreply, socket}
   end
 end
